@@ -26,7 +26,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		Session currrentSession = 
 				sessionFactory.getCurrentSession();
 		
-		currrentSession.save(newEmployee);
+		currrentSession.saveOrUpdate(newEmployee);
 		
 
 	}
